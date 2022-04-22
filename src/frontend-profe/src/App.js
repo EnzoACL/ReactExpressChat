@@ -11,11 +11,11 @@ function App() {
   const [ store ] = useContext(Context);
 
   return (
-    <>
+    <div className={"flexColumn"}>
       <h1>Chat</h1>
       { store.id === 0 && <SignUp/> }
       { store.id !== 0 && <Chat/> }
-    </>
+    </div>
   );
 }
 
